@@ -24,7 +24,7 @@ Enemy\[] enemies = GetEnemies();
 if (enemies.Any(enemy => enemy.alive)) { /\* Do something \*/ }
 ```
 
-Feels much more idiomatic, and definitely easier to read and write. \*\*But\*\* this approach should be use with care, since it can have unexpected performance hits or garbage allocations. It would be best used for methods that just need to run once, like constructors and such, probably.
+Feels much more idiomatic, and definitely easier to read and write. **But** this approach should be use with care, since it can have unexpected performance hits or garbage allocations. It would be best used for methods that just need to run once, like constructors and such, probably.
 
 Feel free to comment on this technique and share your thoughts.
 
