@@ -1,0 +1,23 @@
+---
+layout: post
+title: Different notations used for compount words
+---
+Programmers usually have a problem when they have to use more than one word to describe something, but they are not allowed to use spaces or punctuation signs. An example of this would be to name files. If someone wants, for instance, to name a picture where 2 people are talking, he would like to write `John and Mike talking.jpg`, but since a filename cannot contain spaces, he may write something like `john-and-mike-talking.jpg`
+
+To do this, there are many popular conventions, even though they are not standarized. Let's take a look at some of them.
+
+## Camel case
+
+This system consists in writing compound words or phrases such that each word in the middle of the phrase begins with a capital letter.
+
+`suchWonderfulBlog.txt`
+
+`leaveCommentsBelow.pdf`
+
+## Pascal case
+
+This is a variation from camel case notation. The only difference is that the first letter of the first word is also capitalized. Also called `upper camel case`.
+
+`SuchWonderfulBlog.txt`
+
+`LeaveCommentsBelow.pdf`
