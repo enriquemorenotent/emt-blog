@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to replace "live" with "on" in jQuery 1.7+
-categories: ''
+categories: jquery javascript
 ---
 The functions `bind` and `live` are being deprecated in jQuery 1.7+ in favor of on, but it’s not very clear how their differences reflect on it. As you might know, `bind` attaches event handlers on DOM elements existing at the time of running the instructions, while `live` also attaches these handlers to DOM elements added in the future. So how does it work with `on`?
 
