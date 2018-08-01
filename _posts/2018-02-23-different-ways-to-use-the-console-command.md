@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Different ways to use the 'console' command
+categories: javascript console
 ---
 If you have ever open the developer tools and used the console, most likely you have used many times the following snippet to debug your JS code.
 
