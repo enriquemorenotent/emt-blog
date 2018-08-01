@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Scientific notation literal in Javascript
+categories: javascript notation
 ---
 Today I Learned that there is a thing called “scientific notation literals” in Javascript. Let’s see some examples.
 
