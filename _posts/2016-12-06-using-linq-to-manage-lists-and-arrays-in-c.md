@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Using LINQ to manage Lists and Arrays in C#'
+categories: 'c# linq'
 ---
 All developers need to loop through arrays or lists sooner or later, to perform operations on its items. For instance, let us say that we want to loop through an array of \*enemies\* to check in any of them are alive.
 
