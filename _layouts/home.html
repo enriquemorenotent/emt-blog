@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-md-12">
+            {% include profile.html %}
+        </div>
+
+        <div class="col-lg-8 col-md-12">
+            <div class="home">
+
+                {%- if site.posts.size > 0 -%}
+                    {%- for post in site.posts -%}
+                        <div class="post">
+                            <a class="title" href="{{ post.url | absolute_url }}">
+                                <h1>{{ post.title | escape }}</h1>
+                            </a>
+
+                            {% include meta.html post=post %}
+                            {{ post.excerpt }}
+
+                        </div>
+                    {%- endfor -%}
+
+                    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | absolute_url }}">via RSS</a></p>
+
+                    <script id="dsq-count-scr" src="https://enriquemorenotent.disqus.com/count.js" async></script>
+                {%- endif -%}
+
+            </div>
+        </div>
+    </div>
+</div>

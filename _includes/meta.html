@@ -1,0 +1,23 @@
+<div class="meta">
+    <div class="block">
+        <i class="far fa-calendar"></i>&nbsp;
+        <span class="date">{{ include.post.date | date: "%b %-d, %Y" }}</span>
+    </div>
+
+    <div class="block">
+        <i class="far fa-comments"></i>&nbsp;
+        <span class="disqus-comment-count" data-disqus-url="{{ include.post.url | absolute_url }}">Loading comment count</span>
+    </div>
+
+    <div class="block">
+        {%- if include.post.categories.size > 0 -%}
+            <i class="far fa-tag"></i>&nbsp;
+            {%- for tag in include.post.categories -%}
+                {{tag}}
+                {%- if tag != include.post.categories.last -%}, {%- endif -%}
+                &nbsp;
+            {%- endfor -%}
+        {%- endif -%}
+    </div>
+
+</div>

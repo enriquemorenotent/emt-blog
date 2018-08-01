@@ -1,0 +1,245 @@
+---
+---
+
+header {
+    font-family: 'Rajdhani', sans-serif;
+    background-color: #4c5461;
+
+    .name,
+    .name:hover,
+    .name:focus,
+    .name:active {
+        margin-left: 20px;
+        display: inline-block;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .logo,
+    .logo:hover,
+    .logo:focus,
+    .logo:active {
+        padding: 20px 0;
+        color: #00c0f2;
+        font-size: 100px;
+        font-weight: bolder;
+        line-height: 1;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+
+    nav {
+        display: block;
+        margin-top: 75px;
+        font-weight: 700;
+        font-size: 21px;
+        float: right;
+        color: #FFF;
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            margin: 0 20px 0 2px;
+            display: inline-block;
+        }
+
+        a {
+            color: #00c0f2;
+            text-transform: uppercase;
+            border-bottom: 3px solid rgba(0, 192, 242, 0);
+            transition: border 0.1s;
+        }
+
+        a:hover {
+            color: #00c0f2;
+            text-decoration: none;
+            border-bottom-color: #00c0f2;
+        }
+    }
+}
+
+.fa {
+    color: white;
+    margin: 0 5px;
+}
+
+.portfolio-item {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 80px 0;
+
+    .image,
+    .desc {
+        width: 40%;
+    }
+
+    &:nth-child(odd) {
+        background-color: white;
+    }
+
+    &:nth-child(even) {
+        background-color: #4c5461;
+        color: white;
+
+        .image {
+            order: 1;
+        }
+
+        .desc {
+            order: -1;
+        }
+    }
+
+    h1 {
+        font-size: 2em;
+        font-weight: 700;
+    }
+    img {
+        width: 100%;
+        box-shadow: 0 0 10px 0px #000;
+    }
+}
+
+.about-me {
+    text-align: center;
+    padding-top: 30px;
+
+    img {
+        max-width: 100%;
+    }
+    h3 {
+        margin-top: 20px;
+        font-weight: 600;
+        font-size: 1.5em;
+    }
+    .social-networks a {
+        margin: 0 8px;
+        font-size: 1.5em;
+    }
+}
+
+ul.resumes {
+    padding: 0;
+    list-style: none;
+
+    li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+}
+
+.post {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    margin-top: 40px;
+
+    &:last-child {
+        border-bottom: 0;
+    }
+
+    a.title {
+        color: #212529;
+        text-decoration: none;
+        transition: color 0.08s linear;
+    }
+
+    a.title h1 {
+        margin-bottom: 0;
+        font-size: 1.8em;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .meta {
+        color: #888;
+        font-size: 14px;
+        margin-bottom: 1em;
+
+        .far {
+            font-weight: bold;
+        }
+        .block {
+            display: inline-block;
+            margin-right: 20px;
+        }
+    }
+
+    .disqus-comment-count {
+        font-size: 14px;
+    }
+
+    a.title:hover,
+    a:active,
+    a:focus {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    .snippet {
+        margin: 20px 0;
+
+        code {
+            padding: 30px;
+        }
+
+        .code-header {
+            padding: 10px 10px 8px 10px;
+            text-align: right;
+            background-color: #e67e22;
+            color: #222;
+            font-family: monospace;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 1;
+        }
+    }
+
+    & + hr {
+      margin-top: 20px;
+    }
+}
+
+#disqus_thread {
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+    header {
+
+        .logo,
+        .logo:hover,
+        .logo:focus,
+        .logo:active {
+            padding-bottom: 0;
+        }
+
+        nav {
+            float: none;
+            margin-top: 0;
+        }
+
+        ul {
+            padding: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 495px) {
+    header .logo {
+        display: block;
+    }
+    header .name {
+        margin: 0 0 10px 5px;
+    }
+}
+
+pre.highlight {
+    padding: 30px;
+}
