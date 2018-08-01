@@ -70,14 +70,8 @@ header {
 }
 
 .portfolio-item {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 80px 0;
 
-    .image,
-    .desc {
-        width: 40%;
-    }
+    padding: 60px 0;
 
     &:nth-child(odd) {
         background-color: white;
@@ -86,14 +80,6 @@ header {
     &:nth-child(even) {
         background-color: #4c5461;
         color: white;
-
-        .image {
-            order: 1;
-        }
-
-        .desc {
-            order: -1;
-        }
     }
 
     h1 {
