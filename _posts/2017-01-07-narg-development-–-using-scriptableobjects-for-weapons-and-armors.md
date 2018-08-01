@@ -1,6 +1,7 @@
 ---
 layout: post
 title: NARG development – Using ScriptableObjects for weapons and armors
+categories: unity unity3d unityengine
 ---
 I have started a new project in an area that is out of my comfort zone. I am developing my first video-game for the PS4, codename NARG. Today I am going to talk about Scriptable Objects.
 
