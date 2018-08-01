@@ -21,3 +21,23 @@ This is a variation from camel case notation. The only difference is that the fi
 `SuchWonderfulBlog.txt`
 
 `LeaveCommentsBelow.pdf`
+
+## Snake case
+
+In this notation each word will be joined together with a unique underscore.
+
+`such_wonderful_blog.txt`
+
+`leave_comments_below.pdf`
+
+## Kebab case
+
+This case is similar to snake case, but instead of using an underscore, an hyphen is used to join words together.
+
+`such-wonderful-blog.txt`
+
+`leave-comments-below.pdf`
+
+---
+
+Let me know if I have missed something!
