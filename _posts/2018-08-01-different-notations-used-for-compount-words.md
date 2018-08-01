@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Different notations used for compount words
+categories: notation
 ---
 Programmers usually have a problem when they have to use more than one word to describe something, but they are not allowed to use spaces or punctuation signs. An example of this would be to name files. If someone wants, for instance, to name a picture where 2 people are talking, he would like to write `John and Mike talking.jpg`, but since a filename cannot contain spaces, he may write something like `john-and-mike-talking.jpg`
 
