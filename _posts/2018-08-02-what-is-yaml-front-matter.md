@@ -28,7 +28,7 @@ comments_enabled: false
 </html>
 ```
 
-```markdown
+```md
 ---
 published: true
 ---
