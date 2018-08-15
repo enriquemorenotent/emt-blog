@@ -16,8 +16,9 @@ There is a better way.
 First let's register a new kind of post type:
 
 ```
-// functions.php
 <?php
+
+// functions.php
 
 add_action('init', 'register_custom_posts_init');
 
