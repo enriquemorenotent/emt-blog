@@ -71,6 +71,9 @@ header {
 
 .portfolio-item {
 
+    a {
+        color: #00c0f2;
+    }
     padding: 60px 0;
 
     &:nth-child(odd) {

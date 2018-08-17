@@ -4,10 +4,15 @@ This is my personal blog, built with Jekyll, and deployed in Netlify.
 
 ## Local Development
 
-Clone this repository and run:
+First install dependencies:
 
 ```bash
 bundle install
+```
+
+Then execute the development server
+
+```bash
 bundle exec jekyll server --watch
 ```
 
