@@ -12,7 +12,8 @@ sudo apt update
 sudo apt full-upgrade
 
 # Enable additional software!
-# Go to "Software & Updates" and be sure to include all the repos in there. And since you are there, choose a server that is close-by.
+# Go to "Software & Updates" and be sure to include all the repos in there.
+# And since you are there, choose a server that is close-by.
 
 # Install media codecs
 sudo apt install ubuntu-restricted-extras
