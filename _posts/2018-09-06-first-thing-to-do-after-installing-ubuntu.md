@@ -6,7 +6,7 @@ categories: ubuntu set-up
 You just installed the latest Ubuntu distro (right now 18.04) are you are dying to know what should you do first, right? This is in my list.
 
 ## The basics
-```
+```bash
 # Update the system
 sudo apt update
 sudo apt full-upgrade
