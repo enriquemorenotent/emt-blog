@@ -21,7 +21,7 @@ If you have already started your project and you would like to get rid of this, 
 
 But if you are just about to start a new project, and you would like the site generator to give a fresh application without this feature activated by default, you can use the following command.
 
-```
+```bash
 $ rails new my_project_name --skip-active-storage
 ```
 
