@@ -2,10 +2,13 @@
 layout: post
 title: First thing to do after installing Ubuntu
 categories: ubuntu set-up
+image: https://images.unsplash.com/photo-1527355839959-04c7c437c723?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e726c0089874533e149913145571d8c0&auto=format&fit=crop&w=1953&q=80
 ---
+
 You just installed the latest Ubuntu distro (right now 18.04) are you are dying to know what should you do first, right? This is in my list.
 
 ## The basics
+
 ```bash
 # Update the system
 sudo apt update
@@ -25,27 +28,26 @@ sudo apt install vlc
 sudo apt install gimp
 ```
 
-
 ## Programing
 
-* I have more than 1 workspace in Slack. To manage them, I use the snap package.
+- I have more than 1 workspace in Slack. To manage them, I use the snap package.
 
 ```
 sudo snap install slack
 ```
 
-* [nvm](https://github.com/creationix/nvm) to manage different node versions
-* [rbenv](https://github.com/rbenv/rbenv#basic-github-checkout) to manage different ruby versions
+- [nvm](https://github.com/creationix/nvm) to manage different node versions
+- [rbenv](https://github.com/rbenv/rbenv#basic-github-checkout) to manage different ruby versions
 
-* I am going to need a shell, and to me there is nothing that beats zsh.
+- I am going to need a shell, and to me there is nothing that beats zsh.
 
 ```
 sudo apt install zsh
 ```
 
-* [Antigen](https://github.com/zsh-users/antigen/wiki/Installation) is a great way to manage extension and plugins in zsh, so that comes next
+- [Antigen](https://github.com/zsh-users/antigen/wiki/Installation) is a great way to manage extension and plugins in zsh, so that comes next
 
-* Once installed, set up your .zshrc. This is mine:
+- Once installed, set up your .zshrc. This is mine:
 
 ```bash
 source ~/antigen.zsh
@@ -71,14 +73,14 @@ antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship
 antigen apply
 ```
 
-* You are using Linux so you must program, in some sort or way. You are gonna need either [Sublime Text](https://www.sublimetext.com/docs/3/linux_repositories.html), [Visual Studio Code](https://code.visualstudio.com/download) or [Atom](https://flight-manual.atom.io/getting-started/sections/installing-atom/).
+- You are using Linux so you must program, in some sort or way. You are gonna need either [Sublime Text](https://www.sublimetext.com/docs/3/linux_repositories.html), [Visual Studio Code](https://code.visualstudio.com/download) or [Atom](https://flight-manual.atom.io/getting-started/sections/installing-atom/).
 
 ## Install other 3rd party software
 
-* Time to install [Chrome](https://www.google.com/chrome/). Unless you are happy enough with Firefox, of course.
-* I want to hear music. Time to download [Spotify](https://www.spotify.com/de/download/linux/).
-* Everyone loves animated GIFs. Go make some with [Peek](https://github.com/phw/peek).
+- Time to install [Chrome](https://www.google.com/chrome/). Unless you are happy enough with Firefox, of course.
+- I want to hear music. Time to download [Spotify](https://www.spotify.com/de/download/linux/).
+- Everyone loves animated GIFs. Go make some with [Peek](https://github.com/phw/peek).
 
 ## Other settings
 
-* Go to "Settings -> Devices -> Displays" and set those night lights. We all need a good night sleep.
+- Go to "Settings -> Devices -> Displays" and set those night lights. We all need a good night sleep.

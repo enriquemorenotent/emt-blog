@@ -2,7 +2,9 @@
 layout: post
 title: NARG development – Using ScriptableObjects for weapons and armors
 categories: unity unity3d unityengine
+image: https://images.unsplash.com/photo-1519786632971-829b4ac6ecce?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fc883be3feb883d9d1dc93cd1c913af2&auto=format&fit=crop&w=1287&q=80
 ---
+
 I have started a new project in an area that is out of my comfort zone. I am developing my first video-game for the PS4, codename NARG. Today I am going to talk about Scriptable Objects.
 
 ScriptableObjects are just data containers, but with them one is able to edit and manipulate them in Unity’s inspector.

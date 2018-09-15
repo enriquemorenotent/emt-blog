@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Google analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-22669189-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-22669189-1');
+	</script>
+
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>EMT - Blog</title>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rajdhani:400,500,600,700|Roboto">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/syntax.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+
+	<!-- <script src="/js/main.js"></script> -->
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<a href="/" class="logo">EMT</a>
+					<a href="/" class="name">Enrique Moreno Tent</a>
+					<nav>
+						<ul>
+							<li>
+								<a href="/">
+									<i aria-hidden="true" class="fa fa-pencil-alt"></i>
+									Blog
+								</a>
+							</li>
+							<li>
+								<a href="/portfolio">
+									<i aria-hidden="true" class="fa fa-briefcase"></i>
+									Portfolio
+								</a>
+							</li>
+							<li>
+								<i aria-hidden="true" class="fa fa-file-alt"></i>
+								RESUME:&nbsp;
+								<a target="_blank" href="https://docs.google.com/document/d/1J6k_KnGRb01vIJXl24nMWRWuZS-FKh2X7j9wNqwQjbQ/edit?usp=sharing">(EN)</a>
+								<a target="_blank" href="https://docs.google.com/document/d/1eopxaJ724auv7iKztOgAw2AoS29iqCqO3oddutttKDU/edit?usp=sharing">(DE)</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	{{content}}
+
+	<!-- Netlify CMS -->
+	<script>
+		if (window.netlifyIdentity) {
+			window.netlifyIdentity.on("init", user => {
+				if (!user) {
+					window.netlifyIdentity.on("login", () => {
+						document.location.href = "/admin/";
+					});
+				}
+			});
+		}
+	</script>
+</body>
+
+</html>

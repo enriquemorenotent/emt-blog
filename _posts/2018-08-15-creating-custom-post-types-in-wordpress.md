@@ -2,14 +2,16 @@
 layout: post
 title: Creating custom post types in Wordpress
 categories: wordpress php
+image: https://images.unsplash.com/photo-1530435460869-d13625c69bbf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=85df42cd926cf92977088041afab57c5&auto=format&fit=crop&w=1350&q=80
 ---
+
 It is not seldom that a website needs different kinds of data. Wordpress comes out of the box with "post" and "page", but we might need more.
 
 Many times this is achieved with **categories** since they provide a way of differentiate between the content of the post, in relation with their content.
 
 But what happens if we start adding different data structures to our post? Let's say that we want to define "city profiles" into out Wordpress system. A city might come with very different custom fields. For instance, `location`, `amount of population`, `continent`.
 
-The topic of how to add custom fields is in itself worth of another post, but let's say that we have that as a given. We could separate the posts that represent a city within a "City" category, but that makes the management of data quite hard. One would have to look through all the posts for the needed data  every time, and set the filters properly to reach the post one is looking for.
+The topic of how to add custom fields is in itself worth of another post, but let's say that we have that as a given. We could separate the posts that represent a city within a "City" category, but that makes the management of data quite hard. One would have to look through all the posts for the needed data every time, and set the filters properly to reach the post one is looking for.
 
 There is a better way.
 
@@ -57,7 +59,6 @@ $query = new WP_Query([
 
 $cities = $query->posts;
 ?>
-
 ```
 
 We can query directly by post type, which is a very easy query to write.

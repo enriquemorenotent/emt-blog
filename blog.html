@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+
+
+
+<!-- Section -->
+<section>
+	<header class="major">
+		<h2>Blog</h2>
+	</header>
+	<div class="posts">
+
+		{%- if site.posts.size > 0 -%}
+		{%- for post in site.posts -%}
+
+		<article>
+			<a href="{{ post.url | absolute_url }}" class="image"><img src="{{ post.image }}" alt="" /></a>
+			<h3>{{ post.title | escape }}</h3>
+			<p>{{ post.excerpt }}</p>
+			<ul class="actions">
+				<li><a href="{{ post.url | absolute_url }}" class="button">More</a></li>
+			</ul>
+		</article>
+		{%- endfor -%}
+		{%- endif -%}
+
+		<!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | absolute_url }}">via RSS</a></p>
+
+		<script id="dsq-count-scr" src="https://enriquemorenotent.disqus.com/count.js" async></script> -->
+	</div>
+</section>
