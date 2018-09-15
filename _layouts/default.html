@@ -7,10 +7,23 @@
 <html>
 
 <head>
-	<title>Editorial by HTML5 UP</title>
+	<title>Enrique Moreno Tent</title>
 	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="/assets/css/main.css" />
+
+
+	<!-- Google analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-22669189-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-22669189-1');
+	</script>
+
 </head>
 
 <body class="is-preload">
@@ -133,6 +146,19 @@
 	<script src="/assets/js/breakpoints.min.js"></script>
 	<script src="/assets/js/util.js"></script>
 	<script src="/assets/js/main.js"></script>
+
+	<!-- Netlify CMS -->
+	<script>
+		if (window.netlifyIdentity) {
+			window.netlifyIdentity.on("init", user => {
+				if (!user) {
+					window.netlifyIdentity.on("login", () => {
+						document.location.href = "/admin/";
+					});
+				}
+			});
+		}
+	</script>
 
 </body>
 
