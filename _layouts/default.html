@@ -1,77 +1,165 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
+
 <head>
-    <!-- Google analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-22669189-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+	<title>Enrique Moreno Tent</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="/assets/css/main.css" />
 
-        gtag('config', 'UA-22669189-1');
-    </script>
 
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Google analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-22669189-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-    <title>EMT - Blog</title>
+		gtag('config', 'UA-22669189-1');
+	</script>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rajdhani:400,500,600,700|Roboto">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/syntax.css" >
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
-
-    <!-- <script src="/js/main.js"></script> -->
 </head>
-<body>
-    <header>
-        <div class="container">
-        <div class="row">
-        <div class="col">
-            <a href="/" class="logo">EMT</a>
-            <a href="/" class="name">Enrique Moreno Tent</a>
-        <nav>
-        <ul>
-            <li>
-                <a href="/">
-                    <i aria-hidden="true" class="fa fa-pencil-alt"></i>
-                    Blog
-                </a>
-            </li>
-            <li>
-                <a href="/portfolio">
-                    <i aria-hidden="true" class="fa fa-briefcase"></i>
-                    Portfolio
-                </a>
-            </li>
-            <li>
-                <i aria-hidden="true" class="fa fa-file-alt"></i>
-                RESUME:&nbsp;
-                <a target="_blank" href="https://docs.google.com/document/d/1J6k_KnGRb01vIJXl24nMWRWuZS-FKh2X7j9wNqwQjbQ/edit?usp=sharing">(EN)</a>
-                <a target="_blank" href="https://docs.google.com/document/d/1eopxaJ724auv7iKztOgAw2AoS29iqCqO3oddutttKDU/edit?usp=sharing">(DE)</a>
-            </li>
-        </ul>
-        </nav>
-        </div>
-        </div>
-        </div>
-    </header>
 
-    {{content}}
+<body class="is-preload">
 
-    <!-- Netlify CMS -->
-    <script>
-        if (window.netlifyIdentity) {
-            window.netlifyIdentity.on("init", user => {
-            if (!user) {
-                window.netlifyIdentity.on("login", () => {
-                    document.location.href = "/admin/";
-                });
-            }
-            });
-        }
-    </script>
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+
+				<!-- Header -->
+				<header id="header">
+					<a href="/" class="logo"><strong>Enrique Moreno Tent</strong> Web development</a>
+					<ul class="icons">
+						<li><a class="icon fa-twitter" target="_blank" href="https://twitter.com/enriquemoreno"></a></li>
+						<li><a class="icon fa-github" target="_blank" href="https://github.com/enriquemorenotent"></a></li>
+						<li><a class="icon fa-xing-square" target="_blank" href="https://www.xing.com/profile/Enrique_MorenoTent2"></a></li>
+						<li><a class="icon fa-stack-overflow" target="_blank" href="https://stackoverflow.com/users/392684/enrique-moreno-tent"></a></li>
+						<li><a class="icon fa-envelope" target="_blank" href="mailto:enriquemorenotent@gmail.com"></a></li>
+
+					</ul>
+				</header>
+
+				{{ content }}
+
+			</div>
+		</div>
+
+		<!-- Sidebar -->
+		<div id="sidebar">
+			<div class="inner">
+
+				<!-- Menu -->
+				<nav id="menu">
+					<header class="major">
+						<h2>Menu</h2>
+					</header>
+					<ul>
+						<li><a href="/">About me</a></li>
+						<li><a href="/blog">Blog</a></li>
+						<li><a href="/portfolio">Portfolio</a></li>
+						<li>
+							<span class="opener">Resume</span>
+							<ul>
+								<li><a target="_blank" href="https://docs.google.com/document/d/1J6k_KnGRb01vIJXl24nMWRWuZS-FKh2X7j9wNqwQjbQ/edit?usp=sharing">German</a></li>
+								<li><a target="_blank" href="https://docs.google.com/document/d/1eopxaJ724auv7iKztOgAw2AoS29iqCqO3oddutttKDU/edit?usp=sharing">English</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+
+				{%- if page.name != 'portfolio.html' -%}
+				<!-- Section -->
+				<section>
+					<header class="major">
+						<h2>Projects</h2>
+					</header>
+
+
+					<div class="mini-posts">
+						<article>
+							<a target="_blank" href="https://social.schau-hin.info" class="image"><img src="https://www.schau-hin.info/fileadmin/content/ueberuns/LOGOISH-Blau-Schraeg.png"
+								 alt="" /></a>
+							<h3>Schau hin! Media erleben</h3>
+							<p>A hub where german families can learn how to teach their children to navigate and surf the internet while
+								staying
+								safe.</p>
+						</article>
+						<article>
+							<a target="_blank" href="https://www.felgenoutlet.de/de" class="image"><img src="https://images.unsplash.com/photo-1534767854167-8f1cc54ebbfc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7d30c346316203e3ba304a5d3020899a&auto=format&fit=crop&w=1350&q=80"
+								 alt="" /></a>
+							<h3>Felgenoutlet</h3>
+							<p>Big business in Germany for buy and replacement of tires and rims for vehicles. Posses a great onboarding
+								experience for new users.</p>
+						</article>
+						<article>
+							<a target="_blank" href="http://smarttourismcapital.eu/" class="image"><img src="https://i.ytimg.com/vi/LFHqZ7v9rfY/maxresdefault.jpg"
+								 alt="" /></a>
+							<h3>European capital of tourism</h3>
+							<p>This EU driven project helps you discover the most important capital to travel around Europe and offers
+								cities
+								the chance to join that list.</p>
+						</article>
+					</div>
+					<ul class="actions">
+						<li><a href="/portfolio" class="button">see more projects</a></li>
+					</ul>
+				</section>
+				{%- endif -%}
+
+				<!-- Section -->
+				<section>
+					<header class="major">
+						<h2>Get in touch</h2>
+					</header>
+					<p>If you want to get in touch with me, I recommend you sending me an email, as I can always
+						make time to answer them. But if you need to have a voice chat with me, you can also call
+						me on the phone.</p>
+					<ul class="contact">
+						<li class="fa-envelope-o"><a target="_blank" href="mailto:enriquemorenotent@gmail.com">enriquemorenotent@gmail.com</a></li>
+						<li class="fa-phone">+49 176 81985343</li>
+					</ul>
+				</section>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<p class="copyright">&copy; Enrique Moreno Tent. All rights reserved. Images: <a href="https://unsplash.com">Unsplash</a>.
+						Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+				</footer>
+
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="/assets/js/jquery.min.js"></script>
+	<script src="/assets/js/browser.min.js"></script>
+	<script src="/assets/js/breakpoints.min.js"></script>
+	<script src="/assets/js/util.js"></script>
+	<script src="/assets/js/main.js"></script>
+
+	<!-- Netlify CMS -->
+	<script>
+		if (window.netlifyIdentity) {
+			window.netlifyIdentity.on("init", user => {
+				if (!user) {
+					window.netlifyIdentity.on("login", () => {
+						document.location.href = "/admin/";
+					});
+				}
+			});
+		}
+	</script>
+
 </body>
+
 </html>

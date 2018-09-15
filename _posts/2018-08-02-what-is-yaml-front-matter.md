@@ -2,7 +2,9 @@
 layout: post
 title: What is YAML Front Matter?
 categories: yaml yml front-matter
+image: https://images.unsplash.com/photo-1520291453334-bf27a7e0e500?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=12e67f6513a32f2ab2053f406aa84c60&auto=format&fit=crop&w=1350&q=80
 ---
+
 Lately I started tinkering around with framework for static site generation sites, and I saw something new that I did not know. The so called **YAML Front Matter** (or just **Front Matter**).
 
 At first the name confused me quite a lot, but after a while I realized how simple it is. Front Matter is nothing else that a space at the beginning of your templates, that is used to define variables, in YAML format. That is it. Let's see an example with Markdown and with HTML
@@ -39,7 +41,7 @@ Hello world
 
 ## Another section
 
-lorem lorem lorem lorem lorem lorem 
+lorem lorem lorem lorem lorem lorem
 ```
 
 There is not much more to it. It basically couples tightly the variables of your page, to the document itself.

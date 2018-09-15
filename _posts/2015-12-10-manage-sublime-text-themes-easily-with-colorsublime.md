@@ -2,7 +2,9 @@
 layout: post
 title: Manage Sublime Text themes easily with Colorsublime
 categories: sublime-text sublime-text-2
+image: https://images.unsplash.com/photo-1520633946251-dcf52b0276b9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=686e5ce82ff415317e8cc11989728517&auto=format&fit=crop&w=1350&q=80
 ---
+
 Changing themes in **Sublime Text** can be a difficult task. Not because it is extremely critical for your productivity, but we all want our editor to have a proper color, that does not stop our concentration. It is like waking up in the morning and spending 30 minutes in front of the mirror, trying to decide what trousers to wear, so that our ass do not look too fat.
 
 Choosing themes was not usually an easy task. Usually involves choosing theme, activating it, and checking it, which shouldn't take more than 10 seconds, but if you are doubting between 20 themes, it can get quite tedious.

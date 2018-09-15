@@ -1,7 +1,9 @@
 ---
 layout: post
 title: The tools I am using (2018)
+image: https://images.unsplash.com/photo-1526381508894-f68d6b837627?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bc638fbde1e031cfea1e5f6ed4ee01e7&auto=format&fit=crop&w=1334&q=80
 ---
+
 I have seen other people writing [articles with about the same topic](https://dev.to/michael/the-tools-i-use-july-2018-edition--2l2), so I thought I would share as well my set of tools, to compare and to let know others what it is that they could be using.
 
 **Ubuntu**: This is not the most common choice, but since I started using Ubuntu 5 years ago, I have never had the desire to switch back. The platform has everything I need to work on web development. It is free. It is OSS. And unlike Apple, yo do not find yourself locked into an expensive software ecosystem that you need to maintain to keep all your different tools working well together with one another.
