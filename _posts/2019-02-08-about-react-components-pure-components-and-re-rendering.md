@@ -1,22 +1,22 @@
 ---
 layout: post
-title: 'About React components, pure components and re-rendering'
+title: "About React components, pure components and re-rendering"
 categories: react
 ---
+
 Let's take a React component, that simply displays a number. This can be written both as a **class component** or as a **function component**.
 
-```js
+```jsx
 import React from "react";
 
 class Message extends React.Component {
-  render = () =>
-    <div className="Message">Number: {this.props.number}</div>;
+  render = () => <div className="Message">Number: {this.props.number}</div>;
 }
 
 export default Message;
 ```
 
-```js
+```jsx
 import React from "react";
 
 const FunctionMessage = ({ number }) => {
@@ -32,7 +32,7 @@ To avoid this problem, we have **pure components**. These are components that wi
 
 To write a Pure Component as a class component, we use **React.PureComponent**.
 
-```js
+```jsx
 import React from "react";
 
 class PureMessage extends React.PureComponent {
@@ -44,7 +44,7 @@ export default PureMessage;
 
 If we want to do the same with a function component, we must use **React.memo**.
 
-```js
+```jsx
 import React, { memo } from "react";
 
 const MemoFunctionMessage = ({ number }) => {
