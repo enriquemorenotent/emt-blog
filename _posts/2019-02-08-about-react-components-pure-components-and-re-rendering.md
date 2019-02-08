@@ -56,4 +56,6 @@ export default memo(MemoFunctionMessage);
 
 These methods will save you rendering, improving the performance of our React applications.
 
+In this Codesandbox you have a small example of how renders are activated when the parent component updates.
+
 <iframe src="https://codesandbox.io/embed/jpxokl56n9?autoresize=1" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
