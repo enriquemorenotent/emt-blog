@@ -30,3 +30,5 @@ import React, { memo } from "react";const MemoFunctionMessage = ({ number }) => 
 ```
 
 These methods will save you rendering, improving the performance of our React applications.
+
+<iframe src="https://codesandbox.io/embed/jpxokl56n9?autoresize=1" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
