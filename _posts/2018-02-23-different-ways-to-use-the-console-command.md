@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Different ways to use the 'console' command
+published-on: "2019-04-16"
 categories: javascript console
-image: https://images.unsplash.com/photo-1529392960549-df4af50eac23?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cbb5faad99367a05fc9ce16f668f8865&auto=format&fit=crop&w=1350&q=80
 ---
 
 If you have ever open the developer tools and used the console, most likely you have used many times the following snippet to debug your JS code.
