@@ -44,7 +44,9 @@ This case is similar to snake case, but instead of using an underscore, an hyphe
 
 This is just a fun way to describe variables in uppercase. This is usually used for constants.
 
-`const MAX_ITEMS = 12`
+```js
+const MAX_ITEMS = 12
+```
 
 - - -
 
