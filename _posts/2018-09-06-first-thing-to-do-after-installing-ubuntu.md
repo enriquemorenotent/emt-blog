@@ -73,6 +73,8 @@ antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship
 antigen apply
 ```
 
+- A good looking terminal I have been using lately is called [Hyper](https://hyper.is), but there are other alternatives, like [Terminator](https://gnometerminator.blogspot.com/p/introduction.html)
+
 - You are using Linux so you must program, in some sort or way. You are gonna need either [Sublime Text](https://www.sublimetext.com/docs/3/linux_repositories.html), [Visual Studio Code](https://code.visualstudio.com/download) or [Atom](https://flight-manual.atom.io/getting-started/sections/installing-atom/).
 
 ## Install other 3rd party software
