@@ -1,10 +1,9 @@
 ---
 layout: post
 title: Different notations used for compound words
+published-on: '2018-08-01'
 categories: notation
-image: https://images.unsplash.com/photo-1489218970298-e95b97087e48?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f6ab81853549dbd758c93e4f26986923&auto=format&fit=crop&w=1489&q=80
 ---
-
 Programmers usually have a problem when they have to use more than one word to describe something, but they are not allowed to use spaces or punctuation signs. An example of this would be to name files. If someone wants, for instance, to name a picture where 2 people are talking, he would like to write `John and Mike talking.jpg`, but since a filename cannot contain spaces, he may write something like `john-and-mike-talking.jpg`
 
 To do this, there are many popular conventions, even though they are not standarized. Let's take a look at some of them.
@@ -41,6 +40,14 @@ This case is similar to snake case, but instead of using an underscore, an hyphe
 
 `leave-comments-below.pdf`
 
----
+## Screaming case
+
+This is just a fun way to describe variables in uppercase. This is usually used for constants.
+
+```js
+const MAX_ITEMS = 12
+```
+
+- - -
 
 Let me know if I have missed something!
