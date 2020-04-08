@@ -7,40 +7,40 @@ image: https://images.unsplash.com/photo-1527355839959-04c7c437c723?ixlib=rb-0.3
 
 I just installed the latest Ubuntu release (right now 19.10). These are the first things I do, to set up my system:
 
-1. Activate additional drivers. Some parts of my computer might not work without the propertary drivers, for instance, your WiFi card.
+* Activate additional drivers. Some parts of my computer might not work without the propertary drivers, for instance, your WiFi card.
 
-2. Set up displays. Currently I am using 3 monitors, one of them in portrait. I also like to set up "night lights" to get a better sleep.
+* Set up displays. Currently I am using 3 monitors, one of them in portrait. I also like to set up "night lights" to get a better sleep.
 
-3. Set up Wifi. I am going to need internet to do the setup.
+* Set up Wifi. I am going to need internet to do the setup.
 
-4. Install and setup Timeshift. Important tool to turn back time, if something were to go wrong.
+* Install and setup Timeshift. Important tool to turn back time, if something were to go wrong.
 
 ```bash
 sudo apt install timeshift
 ```
 
-5. Full system update.
+* Full system update.
 
 ```bash
 sudo apt update
 sudo apt full-upgrade
 ```
 
-6. Enable additional software. Go to "Software & Updates" and be sure to include all the repos in there. And since you are there, choose a server that is close-by.
+* Enable additional software. Go to "Software & Updates" and be sure to include all the repos in there. And since you are there, choose a server that is close-by.
 
-7. Install media codecs.
+* Install media codecs.
 
 ```bash
 sudo apt install ubuntu-restricted-extras
 ```
 
-8. Install git
+* Install git
 
 ```bash
 sudo apt install git
 ```
 
-9. Install my favorite shell, zsh, and configure it
+* Install my favorite shell, zsh, and configure it
 
 ```bash
 # Install
@@ -79,40 +79,40 @@ antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship
 antigen apply
 ```
 
-10. A good looking terminal I have been using lately is called [Hyper](https://hyper.is), but there are other alternatives, like [Terminator](https://gnometerminator.blogspot.com/p/introduction.html)
+* A good looking terminal I have been using lately is called [Hyper](https://hyper.is), but there are other alternatives, like [Terminator](https://gnometerminator.blogspot.com/p/introduction.html)
 
 ```bash
 sudo apt install terminator
 ```
 
-11. Set up an SSH key
+* Set up an SSH key
 
 ```bash
 ssh-keygen
 ```
 
-12. [Google Chrome](https://www.google.com/chrome/) is my default web browser
+* [Google Chrome](https://www.google.com/chrome/) is my default web browser
 
-13. Set up workspaces with Gnome extensions
+* Set up workspaces with Gnome extensions
 
 ```bash
 sudo apt install gnome-tweaks chrome-gnome-shell
 ```
 
-14. Other software that I used regularly, that can be installed in any order.
+* Other software that I used regularly, that can be installed in any order.
 
-* vlc
-* gimp
-* Slack
-* Discord
-* Spotify
-* Peek
-* Flameshot
-* Visual Studio Code
-* Synlogdy Drive client
-* Dropbox
-* Unity3D
-* GitKraken
-* Filezilla
-* Hexchat
-* Remarkable
+    * vlc
+    * gimp
+    * Slack
+    * Discord
+    * Spotify
+    * Peek
+    * Flameshot
+    * Visual Studio Code
+    * Synlogdy Drive client
+    * Dropbox
+    * Unity3D
+    * GitKraken
+    * Filezilla
+    * Hexchat
+    * Remarkable
