@@ -5,49 +5,55 @@ categories: ubuntu set-up
 image: https://images.unsplash.com/photo-1527355839959-04c7c437c723?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e726c0089874533e149913145571d8c0&auto=format&fit=crop&w=1953&q=80
 ---
 
-You just installed the latest Ubuntu distro (right now 18.04) are you are dying to know what should you do first, right? This is in my list.
+I just installed the latest Ubuntu release (right now 19.10). These are the first things I do, to set up my system:
 
-## The basics
+1. Activate additional drivers. Some parts of my computer might not work without the propertary drivers, for instance, your WiFi card.
+
+2. Set up displays. Currently I am using 3 monitors, one of them in portrait. I also like to set up "night lights" to get a better sleep.
+
+3. Set up Wifi. I am going to need internet to do the setup.
+
+4. Install and setup Timeshift. Important tool to turn back time, if something were to go wrong.
 
 ```bash
-# Update the system
+sudo apt install timeshift
+```
+
+5. Full system update.
+
+```bash
 sudo apt update
 sudo apt full-upgrade
+```
 
-# Enable additional software!
-# Go to "Software & Updates" and be sure to include all the repos in there.
-# And since you are there, choose a server that is close-by.
+6. Enable additional software. Go to "Software & Updates" and be sure to include all the repos in there. And since you are there, choose a server that is close-by.
 
-# Install media codecs
+7. Install media codecs.
+
+```bash
 sudo apt install ubuntu-restricted-extras
-
-# Install video player
-sudo apt install vlc
-
-# Install graphics editor
-sudo apt install gimp
 ```
 
-## Programing
+8. Install git
 
-- I have more than 1 workspace in Slack. To manage them, I use the snap package.
-
-```
-sudo snap install slack
+```bash
+sudo apt install git
 ```
 
-- [nvm](https://github.com/creationix/nvm) to manage different node versions
-- [rbenv](https://github.com/rbenv/rbenv#basic-github-checkout) to manage different ruby versions
+9. Install my favorite shell, zsh, and configure it
 
-- I am going to need a shell, and to me there is nothing that beats zsh.
-
-```
+```bash
+# Install
 sudo apt install zsh
+
+# Set up as default shell (You need to log out and in again, for it to work)
+chsh -s $(which zsh)
+
+# Download antigen
+curl -L git.io/antigen > antigen.zsh
 ```
 
-- [Antigen](https://github.com/zsh-users/antigen/wiki/Installation) is a great way to manage extension and plugins in zsh, so that comes next
-
-- Once installed, set up your .zshrc. This is mine:
+This is my default .zshrc file.
 
 ```bash
 source ~/antigen.zsh
@@ -73,16 +79,40 @@ antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship
 antigen apply
 ```
 
-- A good looking terminal I have been using lately is called [Hyper](https://hyper.is), but there are other alternatives, like [Terminator](https://gnometerminator.blogspot.com/p/introduction.html)
+10. A good looking terminal I have been using lately is called [Hyper](https://hyper.is), but there are other alternatives, like [Terminator](https://gnometerminator.blogspot.com/p/introduction.html)
 
-- You are using Linux so you must program, in some sort or way. You are gonna need either [Sublime Text](https://www.sublimetext.com/docs/3/linux_repositories.html), [Visual Studio Code](https://code.visualstudio.com/download) or [Atom](https://flight-manual.atom.io/getting-started/sections/installing-atom/).
+```bash
+sudo apt install terminator
+```
 
-## Install other 3rd party software
+11. Set up an SSH key
 
-- Time to install [Chrome](https://www.google.com/chrome/). Unless you are happy enough with Firefox, of course.
-- I want to hear music. Time to download [Spotify](https://www.spotify.com/de/download/linux/).
-- Everyone loves animated GIFs. Go make some with [Peek](https://github.com/phw/peek).
+```bash
+ssh-keygen
+```
 
-## Other settings
+12. [Google Chrome](https://www.google.com/chrome/) is my default web browser
 
-- Go to "Settings -> Devices -> Displays" and set those night lights. We all need a good night sleep.
+13. Set up workspaces with Gnome extensions
+
+```bash
+sudo apt install gnome-tweaks chrome-gnome-shell
+```
+
+14. Other software that I used regularly, that can be installed in any order.
+
+* vlc
+* gimp
+* Slack
+* Discord
+* Spotify
+* Peek
+* Flameshot
+* Visual Studio Code
+* Synlogdy Drive client
+* Dropbox
+* Unity3D
+* GitKraken
+* Filezilla
+* Hexchat
+* Remarkable
