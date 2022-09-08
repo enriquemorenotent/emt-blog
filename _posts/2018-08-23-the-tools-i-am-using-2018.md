@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The tools I am using (2018)
+image: images/tools.jpg
 ---
 I have seen other people writing [articles with about the same topic](https://dev.to/michael/the-tools-i-use-july-2018-edition--2l2), so I thought I would share as well my set of tools, to compare and to let know others what it is that they could be using.
 
@@ -8,7 +9,7 @@ I have seen other people writing [articles with about the same topic](https://de
 
 **Visual Code**: This one was a recent change. I had been a long life supporter with Sublime Text due to its speed, which today I think it is the fastest editor out there. I also like the editors that are just about coding. No IDE, no integrated execution. Just code. Bus I started giving a try to other editors like Atom and Visual Code and it became clear that ST had fallen behind in features. Visual Code is a potent editor that can do whatever you ask him to do. From being a beast to control every aspect of your development, to being just a simple plain editor with an excellent interface.
 
-**Inbox**: For my email communication, Google Inbox has been my choice for a while now, and I have to admit I have never even once missed GMail. It has a clean presentation, modern UI, bundling of messages, and my most beloved feature, reminders. I really hope that Google does not kill it! 
+**Inbox**: For my email communication, Google Inbox has been my choice for a while now, and I have to admit I have never even once missed GMail. It has a clean presentation, modern UI, bundling of messages, and my most beloved feature, reminders. I really hope that Google does not kill it!
 
 * **Update:** Sadly it is going to be killed in March, so I guess I better found a good alternative, because GMail right now does not appeal to me much.
 

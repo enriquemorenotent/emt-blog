@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "About React components, pure components and re-rendering"
+title: "About React, pure components and rendering"
 categories: react
+image: images/react.png
 ---
 
 Let's take a React component, that simply displays a number. This can be written both as a **class component** or as a **function component**.
