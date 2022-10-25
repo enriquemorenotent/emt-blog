@@ -3193,8 +3193,13 @@ button:disabled,
 	width: 26em;
 }
 
+#sidebar header {
+	margin-bottom: 20px;
+}
+
 #sidebar h2 {
 	font-size: 1.3888888889em;
+	margin-bottom: 0;
 }
 
 #sidebar > .inner {
