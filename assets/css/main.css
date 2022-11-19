@@ -3654,3 +3654,7 @@ section.post .date {
 	margin-bottom: 0;
 	text-align: right;
 }
+
+section.post img {
+	max-width: 100%;
+}
