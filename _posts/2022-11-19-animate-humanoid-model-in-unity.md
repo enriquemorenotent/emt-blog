@@ -3,6 +3,7 @@ layout: post
 title: "Animating an rigged humanoid model in Unity"
 categories: unity
 image: https://unity.com/logo-unity-web.png
+excerpt: "In this tutorial, we will learn how to animate a humanoid model in Unity."
 ---
 
 First create an empty scene, and add an rigged humanoid model to it. For this example, I am going to be using an model taken from the [Polygon packages](https://syntystore.com/collections/frontpage){:target="_blank"} from Synty.
