@@ -1,26 +1,27 @@
 ---
 layout: post
-title: "Animating an rigged humanoid model in Unity"
-categories: unity
+title: "Animating a Rigged Humanoid Model in Unity"
+categories: Unity
 image: https://unity.com/logo-unity-web.png
-excerpt: "In this tutorial, we will learn how to animate a humanoid model in Unity."
+excerpt: "In this tutorial, we will delve into the intricacies of animating a humanoid model in Unity."
 ---
 
-First create an empty scene, and add an rigged humanoid model to it. For this example, I am going to be using an model taken from the [Polygon packages](https://syntystore.com/collections/frontpage){:target="_blank"} from Synty.
+To animate a rigged humanoid model in Unity, begin by creating an empty scene, and adding a rigged humanoid model to it. For the purposes of this tutorial, we will use a model from the [Polygon packages](https://syntystore.com/collections/frontpage){:target="_blank"} provided by Synty.
 
-![](https://i.imgur.com/QLLLaia.png)
+![Rigged Humanoid Model](https://i.imgur.com/QLLLaia.png)
 
-Now head to [Mixamo](https://www.mixamo.com/#/){:target="_blank"} and login with your account (make one if you dont have it), and select one of the animations that you want to use. In this case I am going to use the "Hip hip dancing" animation.
+Next, visit [Mixamo](https://www.mixamo.com/#/){:target="_blank"} and login to your account. If you don't have one already, create one. Select one of the animations that you want to use, for example, "Hip hip dancing" animation.
 
-![](https://i.imgur.com/b0yBgs1.png)
+![Hip Hop Dancing Animation](https://i.imgur.com/b0yBgs1.png)
 
-Press the download button and will download a .fbx file. Move this file inside your Unity Assets folder. Inside Unity, select the FXB file. Now make the following modification in the inspector:
-1. In the "Rig" tab, select the "Animation Type" to "Humanoid", then click "Apply".
-2. You might have to click on "Configure" and adapts the rig, depending on the anatomy of your model. In my case, I will leave it as it is.
-3. Go to the "Animation" tab, and make sure that the "Loop" options is checked and all the "Bake into pose" options are checked. Then click "Apply".
+After selecting your preferred animation, click the download button. A .fbx file will be downloaded, move this file to your Unity Assets folder. In Unity, select the .fbx file, and make the following changes in the inspector:
 
-Now all you have to do is create an animation controller, create an empty state and select the assign the animation you just downloaded to it. Then you can play the animation by pressing the play button.
+1. In the "Rig" tab, select the "Animation Type" as "Humanoid", and click "Apply".
+2. Click on "Configure", and adjust the rig based on the anatomy of your model. If the rig is already in sync, leave it as it is.
+3. In the "Animation" tab, ensure that the "Loop" option is selected, and all the "Bake into pose" options are checked. Then, click "Apply".
 
-![](https://i.imgur.com/jyLScxW.gif)
+Now, all that's left to do is create an animation controller, create an empty state, and assign the downloaded animation to it. You can then play the animation by pressing the play button.
 
-Mind that there are many setting all over the place, and many things that can be modified to adapt better to your model and animation. This is just a quick guide to get you started.
+![Animated Humanoid Model](https://i.imgur.com/jyLScxW.gif)
+
+It is worth noting that there are numerous settings scattered throughout Unity, and many adjustments that can be made to better adapt to your model and animation. This tutorial serves as a quick guide to help you get started.
