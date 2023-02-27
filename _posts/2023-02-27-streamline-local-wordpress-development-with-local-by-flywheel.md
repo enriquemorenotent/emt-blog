@@ -4,7 +4,6 @@ title: Local by Flywheel: The Ultimate Tool for Developing Multiple Sites Locall
 categories: wordpress
 image: https://localwp.com/wp-content/uploads/2021/08/local-sharing.png
 excerpt: "Managing multiple WordPress sites locally can be a challenge, but Local by Flywheel makes it easy. In this post, we'll explore the benefits of this powerful desktop application for WordPress developers."
-
 ---
 
 Developing WordPress sites locally is a common practice for web developers. It allows you to test and experiment with different designs, plugins, and themes before making any changes to a live website. However, setting up a local environment can be a tedious task, especially if you need to manage multiple sites. This is where Local by Flywheel comes in handy.
