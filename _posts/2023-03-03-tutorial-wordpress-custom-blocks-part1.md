@@ -2,7 +2,7 @@
 layout: post
 title: "Local by Flywheel: The Ultimate Tool for Developing Multiple Sites Locally"
 categories: wordpress
-image: https://images.unsplash.com/photo-1566207474742-de921626ad0c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80
+image: https://wordpress.org/files/2023/02/standard.png
 excerpt: "Upgrade your website’s functionality and design with our “Building Custom Blocks for WordPress” series. Our step-by-step guide is beginner and expert-friendly, ensuring that everyone can create custom blocks that enhance their website’s capabilities. Get ready to take your WordPress website to the next level!"
 ---
 
