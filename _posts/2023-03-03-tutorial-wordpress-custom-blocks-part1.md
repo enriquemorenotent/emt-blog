@@ -6,8 +6,6 @@ image: https://wordpress.org/files/2023/02/standard.png
 excerpt: "Upgrade your website’s functionality and design with our “Building Custom Blocks for WordPress” series. Our step-by-step guide is beginner and expert-friendly, ensuring that everyone can create custom blocks that enhance their website’s capabilities. Get ready to take your WordPress website to the next level!"
 ---
 
-# Building Custom Blocks for WordPress: A Comprehensive Guide
-
 Are you tired of the limited options for blocks in WordPress? Do you want to customize your website even further? Then building custom blocks may be the solution for you!
 
 In this series, we will guide you through the process of building custom blocks for WordPress. Whether you are a beginner or an expert, our step-by-step approach will help you create custom blocks that will enhance your website.
