@@ -24,7 +24,5 @@ In the next blog post, we will describe what every file does. Stay tuned for mor
 
 **Important links**
 
-* Code for default native blocks of WordPress are built:
-https://github.com/WordPress/gutenberg/blob/trunk/packages/block-library/src/image/edit.js
-* How to add feature support to your custom block:
-https://developer.wordpress.org/block-editor/reference-guides/block-api/block-supports/
+* [Code for default native blocks of WordPress are built](https://github.com/WordPress/gutenberg/blob/trunk/packages/block-library/src/image/edit.js)
+* [How to add feature support to your custom block](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-supports/)
