@@ -23,6 +23,5 @@ This command will prepare everything necessary to create your custom block. Once
 In the next blog post, we will describe what every file does. Stay tuned for more posts in our “Building Custom Blocks for WordPress” series, where we will provide you with comprehensive guidance on creating custom blocks that will elevate your website’s functionality and design.
 
 **Important links**
-
 * [Code for default native blocks of WordPress are built](https://github.com/WordPress/gutenberg/blob/trunk/packages/block-library/src/image/edit.js)
 * [How to add feature support to your custom block](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-supports/)
