@@ -20,7 +20,11 @@ npx @wordpress/create-block my-custom-block
 
 This command will prepare everything necessary to create your custom block. Once you have created the folder, go to the “plugins” section of WordPress, where you will see your newly created plugin listed. Activate it, and you can then include your new block in any post or page.
 
-In the next blog post, we will describe what every file does. But if you can’t wait and are curious about how the default native blocks of WordPress are built, you can check out this link:
-https://github.com/WordPress/gutenberg/blob/trunk/packages/block-library/src/image/edit.js
+In the next blog post, we will describe what every file does. Stay tuned for more posts in our “Building Custom Blocks for WordPress” series, where we will provide you with comprehensive guidance on creating custom blocks that will elevate your website’s functionality and design.
 
-Stay tuned for more posts in our “Building Custom Blocks for WordPress” series, where we will provide you with comprehensive guidance on creating custom blocks that will elevate your website’s functionality and design.
+**Important links**
+
+* Code for default native blocks of WordPress are built:
+https://github.com/WordPress/gutenberg/blob/trunk/packages/block-library/src/image/edit.js
+* How to add feature support to your custom block:
+https://developer.wordpress.org/block-editor/reference-guides/block-api/block-supports/
