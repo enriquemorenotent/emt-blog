@@ -3650,6 +3650,10 @@ button:disabled,
 
 /* Custom */
 
+section.post {
+	max-width: 1000px;
+}
+
 section.post .date {
 	margin-bottom: 0;
 	text-align: right;
