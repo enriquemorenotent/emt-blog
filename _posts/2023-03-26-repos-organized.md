@@ -6,8 +6,6 @@ image: images/github.jpg
 excerpt: "As a developer, it's easy to accumulate a large number of GitHub repositories. For me, it can be overwhelming to keep track of them all and remember what each one does. So, I decided to make a list of my most important repositories by categories, along with a brief description of what they are."
 ---
 
-# My GitHub Repositories: A Personal Overview
-
 As a developer, it's easy to accumulate a large number of GitHub repositories. For me, it can be overwhelming to keep track of them all and remember what each one does. So, I decided to make a list of my most important repositories by categories, along with a brief description of what they are. This way, I can have a better overview of my codebase and easily find what I'm looking for.
 
 ## Templates and boilerplates
