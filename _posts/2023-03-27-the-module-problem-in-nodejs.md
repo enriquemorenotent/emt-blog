@@ -6,11 +6,12 @@ categories: Node.js, JavaScript, Module System
 image: images/npm.jpg
 ---
 
-Node.js is a popular server-side runtime environment that allows developers to run JavaScript code outside of a web browser. One of the challenges of working with Node.js is understanding the module system and how it works. In this post, we'll explore the differences between CommonJS (CJS) and ECMAScript Modules (ESM), and show you how to start an npm project using the ESM syntax and build an npm module that can be used by both module systems.
+Node.js is a popular server-side runtime environment that allows developers to run JavaScript code outside of a web browser. One of the challenges of working with Node.js is understanding the module systems and how they work. In this post, we'll explore the differences between CommonJS (CJS) and ECMAScript Modules (ESM), and show you how to start an npm project using the ESM syntax and build an npm module that can be used by both module systems.
+
 
 ## What is Node.js?
 
-Node.js is a runtime environment that is built on top of the V8 JavaScript engine. It allows developers to run JavaScript code on the server-side, outside of a web browser. Node.js provides a powerful set of APIs and libraries that make it possible to build scalable, high-performance applications that can handle a large number of concurrent connections.
+Node.js is a runtime environment built on top of the V8 JavaScript engine. It allows developers to run JavaScript code on the server-side, outside of a web browser. Node.js provides a powerful set of APIs and libraries that make it possible to build scalable, high-performance applications that can handle a large number of concurrent connections.
 
 ## CJS and ESM
 
@@ -18,7 +19,7 @@ Node.js uses two different module systems: CommonJS (CJS) and ECMAScript Modules
 
 One of the key differences between CJS and ESM is how they handle module loading. CJS modules are loaded synchronously, which means that each module must be fully loaded before any other modules can be loaded. This can lead to slower startup times and can make it more difficult to optimize performance. ESM modules are loaded asynchronously, which means that multiple modules can be loaded at the same time, leading to faster startup times and better performance.
 
-Another difference between CJS and ESM is the way they handle circular dependencies. In CJS, circular dependencies are allowed and are resolved by returning an object with partial values until the circular dependency is fully resolved. In ESM, circular dependencies are not allowed, and must be resolved in a different way, such as by restructuring the code or by using a third-party tool.
+Another difference between CJS and ESM is the way they handle circular dependencies. In CJS, circular dependencies are allowed and are resolved by returning an object with partial values until the circular dependency is fully resolved. In ESM, circular dependencies are also allowed, but they are resolved differently using live bindings, which means that the values can change during the lifetime of the module.
 
 ## Starting an npm project using ESM
 
@@ -51,7 +52,9 @@ export default {
 4. Add the following line to your `package.json` file:
 ```json
 {
+  ...
   "type": "module"
+  ...
 }
 ```
 This tells Node.js to use the ESM syntax for your module.
@@ -120,14 +123,29 @@ export default {
 
 This tells Node.js to use `index.js` as the entry point for CJS modules and `index.mjs` as the entry point for ESM modules.
 
-6. Test your module by running the following commands:
+6. Create two separate files for testing, one with a .cjs extension for testing with CommonJS and one with a .mjs extension for testing with ESM.
+
+For CommonJS:
 
 ```js
-const myModule = require('my-module');
+// test.cjs
+const myModule = require('./index.js');
 console.log(myModule.message); // Output: 'Hello, world!'
+```
 
-import myModule from 'my-module';
+And for ESM:
+
+```js
+// test.mjs
+import myModule from './index.mjs';
 console.log(myModule.message); // Output: 'Hello, world!'
+```
+
+7. Test your module by running the following commands:
+
+```bash
+node test.cjs
+node test.mjs
 ```
 
 By providing both CJS and ESM entry points for your module, you can ensure that your module will work in a wide range of environments and be accessible to a wider audience of developers.
