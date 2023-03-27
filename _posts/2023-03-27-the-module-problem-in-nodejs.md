@@ -56,10 +56,18 @@ export default {
 ```
 This tells Node.js to use the ESM syntax for your module.
 
-5. Test your module by running the following command:
+5. Create a new file named test.mjs in the root of your project directory:
+
+```js
+// test.mjs
+import myModule from './index.mjs';
+console.log(myModule.message); // Output: 'Hello, world!'
+```
+
+6. Test your module by running the following command:
 
 ```
-node index.mjs
+node test.mjs
 ```
 
 This should output `'Hello, world!'`.
