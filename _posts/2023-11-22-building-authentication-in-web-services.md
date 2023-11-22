@@ -6,13 +6,13 @@ image: images/jwt.png
 excerpt: "How to build authentication in web services using JSON Web Tokens (JWTs) using Express in the backend and React in the frontend."
 ---
 
-## Introduction:
+## Introduction
 Hey there, future web service builders! Planning to create a separate FE and BE for your next awesome project? That's a great move! And let's not forget, every top-notch service needs robust authentication. So, let's dive into the world of JWT tokens, ensuring you're up there with the cool kids!
 
-## Understanding JWT Tokens:
+## Understanding JWT Tokens
 When you log in to your web service, you typically receive an access token. This token proves your identity and is short-lived for security purposes. To avoid frequent logins, there's also a refresh token, which helps generate a new access token once the old one expires.
 
-## Initial Approach:
+## Initial Approach
 Here's how I initially thought to manage this:
 
 1. Create both tokens during login.
@@ -22,7 +22,7 @@ Here's how I initially thought to manage this:
 5. On receiving a 401 error (indicating token expiration), request a new token via an endpoint like /auth/refresh.
 6. Use the new access token to retry the failed request.
 
-### Backend Login Request Handling:
+### Backend Login Request Handling
 
 ```javascript
 // Backend: Handling /login request
@@ -52,7 +52,7 @@ app.post('/auth/refresh', (req, res) => {
 });
 
 ```
-### Backend Middleware for Access Token Verification:
+### Backend Middleware for Access Token Verification
 ```javascript
 // Middleware for token verification
 function authenticateToken(req, res, next) {
@@ -67,7 +67,7 @@ function authenticateToken(req, res, next) {
 }
 ```
 
-### React Custom Hook with Axios:
+### React Custom Hook with Axios
 
 ```javascript
 // React: Custom hook for API calls with Axios
@@ -94,14 +94,14 @@ export const useAxios = () => {
 };
 ```
 
-## Reevaluating the Approach:
+## Reevaluating the Approach
 It turns out, my initial plan wasn't the best. Storing tokens in local storage posed security risks, and the entire process was inefficient, with multiple edge cases like race conditions. Plus, managing tokens in FE frameworks like React can get really complex.
 
-## A Better Way - HttpOnly Cookies:
+## A Better Way - HttpOnly Cookies
 Switching to HttpOnly cookies enhances security and streamlines token management.
 Unlike tokens stored in local storage, HttpOnly cookies are **NOT** accessible via JavaScript, significantly reducing the risk of XSS attacks. The server handles token renewal and expiry transparently, providing a smoother user experience and reducing client-side complexity.
 
-### Backend Setup with Access and Refresh Tokens:
+### Backend Setup with Access and Refresh Tokens
 
 ```javascript
 // Backend: Generating both Access and Refresh Tokens
@@ -115,7 +115,7 @@ app.post('/login', (req, res) => {
 });
 ```
 
-### Backend Middleware for Access Token Verification:
+### Backend Middleware for Access Token Verification
 ```javascript
 function verifyAndRenewToken(req, res, next) {
   const accessToken = req.cookies['accessToken'];
@@ -152,6 +152,6 @@ app.get('/some-protected-route', verifyAndRenewToken, (req, res) => {
 
 ```
 
-## Conclusion:
+## Conclusion
 With these enhancements, your web service now securely manages JWT tokens using HttpOnly cookies. The backend handles both access and refresh tokens, ensuring seamless user experience, while the frontend's Axios setup respects cross-origin security. This setup not only boosts security but also simplifies token management in your FE/BE architecture.
 
