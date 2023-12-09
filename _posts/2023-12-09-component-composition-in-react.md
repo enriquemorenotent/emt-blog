@@ -6,7 +6,7 @@ image: images/react.png
 excerpt: "How to use component composition in React to build reusable components."
 ---
 
-*Note: This post is inspired on [this George Moller's tweet](https://pro.twitter.com/_georgemoller/status/1733472087614861388/photo/1). He posts a lot of content about React. I recommend you to follow him on X.*
+*Note: This post is inspired on [this George Moller's tweet](https://twitter.com/_georgemoller/status/1733472087614861388). He posts a lot of content about React. I recommend you to follow him on X.*
 
 React's design philosophy emphasizes the creation of small, reusable components that can be combined to create complex interfaces—a principle known as composition. In this post, we'll explore what composition is and how to apply it by building a `Card` component in two different ways.
 
